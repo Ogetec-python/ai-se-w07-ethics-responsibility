@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Policy Demo</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto,Arial;background:#f7fafc;color:#0f172a;padding:28px;}
+    .card{background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,0.06);}
+    h1{margin:0 0 8px 0}
+    pre{background:#0b1220;color:#e6eef8;padding:12px;border-radius:6px;overflow:auto}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Policy Checker — Demo</h1>
+    <p>Open developer console and run minimal script to fetch sample JSON. This is a local visual anchor for reviewers.</p>
+    <pre id="out">Loading sample_policies.json (local file)…</pre>
+    <script>
+      fetch('../examples/sample_policies.json').then(r=>r.json()).then(j=>{
+        document.getElementById('out').textContent = JSON.stringify(j, null, 2);
+      }).catch(e=>document.getElementById('out').textContent = 'Error loading sample data: ' + e);
+    </script>
+  </div>
+</body>
+</html>

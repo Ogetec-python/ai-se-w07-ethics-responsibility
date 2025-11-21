@@ -1,0 +1,18 @@
+[
+  {
+    "name": "recommendation-model-v1",
+    "model_card": {"description": "demo model"},
+    "data_provenance": {"source": "internal_logs"},
+    "privacy_assessment": null,
+    "fairness_report": {"metrics": {"demographic_parity": 0.8}},
+    "monitoring_plan": {"metrics": ["latency","error_rate"]}
+  },
+  {
+    "name": "text-classifier-beta",
+    "model_card": null,
+    "data_provenance": {"source": "external_corpus"},
+    "privacy_assessment": {"pii": false},
+    "fairness_report": null,
+    "monitoring_plan": null
+  }
+]
