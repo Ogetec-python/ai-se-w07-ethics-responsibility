@@ -107,4 +107,4 @@ python src/policy_checker.py examples/sample_policies.json
 
 Released under the **MIT License**. See [LICENSE](LICENSE).  
 Prepared for the *Software Development Course 2025 — Week 07.*  
-**Author:** Augusto Mate ([@augusto-mate](https://github.com/augusto-mate))
+**Author:** Augusto Mate ([@augusto-mate](https://github.com/augusto-mate) (Ogechi Obinwa)(https://github.com/Ogetec-python))
